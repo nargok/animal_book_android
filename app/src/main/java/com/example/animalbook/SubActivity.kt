@@ -20,7 +20,7 @@ class SubActivity : AppCompatActivity() {
         }
 
         hippoButton.setOnClickListener {
-            val fragment = LionFragment()
+            val fragment = HippoFragment()
             val fragmentManager = this.getSupportFragmentManager()
             val fragmentTransaction = fragmentManager.beginTransaction()
             fragmentTransaction.replace(R.id.container, fragment)
@@ -29,7 +29,7 @@ class SubActivity : AppCompatActivity() {
         }
 
         giraffeButton.setOnClickListener {
-            val fragment = LionFragment()
+            val fragment = GiraffeFragment()
             val fragmentManager = this.getSupportFragmentManager()
             val fragmentTransaction = fragmentManager.beginTransaction()
             fragmentTransaction.replace(R.id.container, fragment)
@@ -37,7 +37,7 @@ class SubActivity : AppCompatActivity() {
                 .commit()
         }
 
-        val fragment = titleFragment as? TitleFragment
+        val fragment = titleFragmentMain as? TitleFragment
         fragment?.setTitle("図鑑画面")
 
 
